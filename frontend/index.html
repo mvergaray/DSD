@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        <script src="vendor/angular/angular.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/loginControl.js"></script>
+    </head>
+    <body ng-app="DsdApp" ng-controller="LoginController">
+        <div class="dsd-login-container dsd">
+            <div class="container container-login">
+                <div class="row vertical-center-row">
+                    <div class="els-login-wrapper">
+                        <form class="login-form"
+                            name="adapLoginForm"
+                            autocomplete="on"
+                            ng-submit="methods.login.submit()">
+                            <fieldset>
+                                <input type="text"
+                                     id="onevideo_login_username"
+                                     name="adaptv_email"
+                                     placeholder="Username">
+                                <input type="password"
+                                     id="onevideo_login_password"
+                                     name="adaptv_password"
+                                     placeholder="Password">
+                                <button type="submit"
+                                      id="onevideo_login_submit"
+                                      class="btn btn-primary">
+                                  <span>Sign In</span>
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
