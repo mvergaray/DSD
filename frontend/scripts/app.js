@@ -1,3 +1,1 @@
-angular.module('DsdApp', [
-  'DsdApp.controllers'
-]);
+var app = angular.module('DsdApp', ['ngRoute']);

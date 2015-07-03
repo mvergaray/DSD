@@ -1,11 +1,8 @@
-angular.module('DsdApp.controllers', []).
-controller('LoginController', function($scope, $window) {
-    $scope.name = "Marco";
-
+app.controller('LoginController', function($scope, $rootScope, $location, $window) {
     $scope.methods = {
         login: {
             submit: function () {
-                $window.location.href = "/menu";
+                $location.url("/menu");
             }
         }
     }
